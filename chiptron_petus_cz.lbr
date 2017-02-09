@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1507,6 +1507,19 @@ www.petus.cz</description>
 <rectangle x1="-2.54" y1="-2.54" x2="2.54" y2="2.54" layer="29"/>
 <rectangle x1="-2.46" y1="-2.46" x2="2.46" y2="2.46" layer="31"/>
 </package>
+<package name="TGS8100">
+<smd name="1" x="-1.2" y="-1.1" dx="1.27" dy="1" layer="1"/>
+<smd name="2" x="1.24" y="-1.1" dx="1.27" dy="1" layer="1"/>
+<smd name="3" x="1.24" y="0.94" dx="1.27" dy="1" layer="1"/>
+<smd name="4" x="-1.2" y="0.94" dx="1.27" dy="1" layer="1"/>
+<wire x1="-2.07" y1="1.74" x2="-2.07" y2="-1.87" width="0.127" layer="21"/>
+<wire x1="-2.07" y1="-1.87" x2="2.11" y2="-1.87" width="0.127" layer="21"/>
+<wire x1="2.11" y1="-1.87" x2="2.11" y2="1.74" width="0.127" layer="21"/>
+<wire x1="2.11" y1="1.74" x2="-2.07" y2="1.74" width="0.127" layer="21"/>
+<text x="-2.9" y="-1.7" size="1.27" layer="21">1</text>
+<text x="-2.1" y="2" size="1.27" layer="21">&gt;NAME</text>
+<text x="-2.2" y="-3.4" size="1.27" layer="21">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RFM70">
@@ -2062,6 +2075,17 @@ www.petus.cz</description>
 <text x="-22.86" y="25.4" size="1.778" layer="94">&gt;VALUE</text>
 <text x="0" y="0" size="1.778" layer="94">ESP32</text>
 <pin name="GND" x="-27.94" y="17.78" length="middle" direction="pwr"/>
+</symbol>
+<symbol name="TGS8100">
+<description>TGS8100</description>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="20.32" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-5.08" x2="20.32" y2="5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="HEATER_1" x="-12.7" y="2.54" length="middle"/>
+<pin name="SENSOR-" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SENSOR+" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="HEATER_2" x="25.4" y="2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2667,6 +2691,25 @@ http://petus.cz</description>
 <connect gate="G$1" pin="VDET_2" pad="11"/>
 <connect gate="G$1" pin="XTAL_N" pad="44"/>
 <connect gate="G$1" pin="XTAL_P" pad="45"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TGS8100">
+<description>TGS8100</description>
+<gates>
+<gate name="G$1" symbol="TGS8100" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="TGS8100">
+<connects>
+<connect gate="G$1" pin="HEATER_1" pad="1"/>
+<connect gate="G$1" pin="HEATER_2" pad="4"/>
+<connect gate="G$1" pin="SENSOR+" pad="3"/>
+<connect gate="G$1" pin="SENSOR-" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
