@@ -1,22 +1,23 @@
-# Eagle
-Projects, libraries in Eagle CAD
-
-AD7415 - temperature sensor
-ADP2108
-ADS1115 board - chinese board with 4ch AD converter
-ESP03 - WiFi module with ESP8266
-ESP32 - WiFi IC
-FT230X - USB - UART converter
-FT231XS - USB - full UART converter
-LT1510
-LT3971
-MCP73832T
-MMA8652FCR1
-NRF24L01 - SMD version of board
-Nokia LCD module
-RFM70 - transceiver
-RN2483
-STM32L011
-STM32F100
-TGS8100
-Teseo-LIV3F
+# Eagle</br>
+Projects, libraries in Eagle CAD</br>
+</br>
+AD7415 - temperature sensor</br>
+ADP2108</br>
+ADS1115 board - chinese board with 4ch AD converter</br>
+ESP03 - WiFi module with ESP8266</br>
+ESP32 - WiFi IC</br>
+FT230X - USB - UART converter</br>
+FT231XS - USB - full UART converter</br>
+LT1510</br>
+LT3971</br>
+MCP73832T</br>
+MMA8652FCR1</br>
+NRF24L01 - SMD version of board</br>
+Nokia LCD module</br>
+RFM70 - transceiver</br>
+RN2483</br>
+STM32L011</br>
+STM32F100</br>
+TGS8100</br>
+Teseo-LIV3F</br>
+</br>
